@@ -589,4 +589,4 @@
 - [Linkedin Swift Style Guide](https://github.com/linkedin/swift-style-guide)
 - [Raywenderlich Swift Style Guide](https://github.com/raywenderlich/swift-style-guide)
 - [Apple Developers Academy - Postech](https://github.com/DeveloperAcademy-POSTECH/swift-style-guide)
-- [StyleShare Swift Style Guide](https://github.com/StyleShare/swift-style-guide#%EC%B5%9C%EB%8C%80-%EC%A4%84-%EA%B8%B8%EC%9D%
+- [StyleShare Swift Style Guide](https://github.com/StyleShare/swift-style-guide#%EC%B5%9C%EB%8C%80-%EC%A4%84-%EA%B8%B8%EC%9D%)
