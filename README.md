@@ -7,7 +7,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 ## 목차
 
 1. [Naming Convention](#NamingConvention)
-    1. 상수,변수[Constant, Variable](#Constant,Variable)
+    1. [Constant, Variable](#Constant,Variable)
     2. [function(함수)](#함수)
     3. [Enum(열거형)](#열거형)
     4. [Class & Struct](#)
