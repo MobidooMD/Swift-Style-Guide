@@ -4,7 +4,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 
 ## 목차
 
-1. [Naming Convention](#Naming Convention)
+1. [Naming Convention](#NamingConvention)
     1. [변수](#변수)
     2. [함수](#함수)
     3. [열거형](#열거형)
@@ -28,7 +28,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 11. [파일관리](#파일관리)
 
 
-## Naming Convention
+## NamingConvention
 ### 변수(Variable)
 - 변수 이름은 `lowerCamelCase`를 사용해주세요.
 - 배열과 같이 복수의 의미를 담고있는 변수라면 끝에 **s**를 붙여서 사용해주세요.
