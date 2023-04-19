@@ -7,8 +7,8 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 ## 목차
 
 1. [Naming Convention](#NamingConvention)
-    1. [Constant, Variable](#Constant-Variable)
-    2. [function(함수)](#함수)
+    1. [Constant, Variable, Property](#Constant-Variable-Property)
+    2. [Function, Method](#Function-Method)
     3. [Enum(열거형)](#열거형)
     4. [Class & Struct](#)
     5. [Protocol](#Protocol)
@@ -31,7 +31,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 
 
 ## NamingConvention
-### Constant-Variable
+### Constant-Variable-Property
 - 변수 이름은 `lowerCamelCase`를 사용해주세요.
 - 배열과 같이 복수의 의미를 담고있는 변수라면 끝에 **s**를 붙여서 사용해주세요.
 - Bool 타입 변수 작명은 [이곳](https://soojin.ro/blog/naming-boolean-variables)에서 설명하는 대로 따라주세요.
@@ -51,7 +51,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
     ```
   </details>
   
-### 함수(func)
+### Function-Method
 - 함수 이름에는 `lowerCamelCase`를 사용해주세요.
 - 함수는 일반적으로 동사원형으로 시작해주세요.
 - Event Hander 함수의 경우 (조동사 + 동사원형)으로 시작해주세요. 주어는 유추 가능하다면, 생략 가능합니다.
