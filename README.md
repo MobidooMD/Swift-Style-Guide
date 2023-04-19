@@ -1,13 +1,13 @@
-***
+---
 # Swift Style Guide
 Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의 논의를 거쳐 지속적으로 업데이트 될 예정입니다.
 우리는 협업 시에도 같은 대상에 대해 조금씩 다른 단어 선택을 할 때가 많습니다. 다른 사람이 작성한 코드를 읽을 때에는 더더욱 이 단어가 정확히 어떤 것을 가리키는 의미로 사용되었는지 고민해야 할 때가 많습니다. 우리는 이러한 과정 중에 더욱 시간과 노력을 줄이고 생산성 향상을 위해 최소한의 장치로 Swift 언어 사용에 대한 규칙을 정했습니다. 
-***
+---
 
 ## 목차
 
 1. [Naming Convention](#Naming-Convention)
-    1. [Constant | Variable | Property](#Constant-|-Variable-|-Property)
+    1. [Constant | Variable | Property](#Constant.-Variable.-Property.)
     2. [Function, Method](#Function-Method)
     3. [Enum(열거형)](#열거형)
     4. [Class & Struct](#)
@@ -31,7 +31,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 
 
 ## Naming Convention
-### Constant | Variable | Property
+### Constant. Variable. Property.
 - 변수 이름은 `lowerCamelCase`를 사용해주세요.
 - 배열과 같이 복수의 의미를 담고있는 변수라면 끝에 **s**를 붙여서 사용해주세요.
 - Bool 타입 변수 작명은 [이곳](https://soojin.ro/blog/naming-boolean-variables)에서 설명하는 대로 따라주세요.
