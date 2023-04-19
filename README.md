@@ -7,7 +7,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 
 1. [Naming Convention](#Naming-Convention)
     1. [Constant & Variable & Property](#Constant&Variable&Property)
-    2. [Function, Method](#Function-Method)
+    2. [Function, Method](#Function,-Method)
     3. [Enum(열거형)](#열거형)
     4. [Class & Struct](#)
     5. [Protocol](#Protocol)
@@ -50,7 +50,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
     ```
   </details>
   
-### Function-Method
+### Function, Method
 - 함수 이름에는 `lowerCamelCase`를 사용해주세요.
 - 함수는 일반적으로 동사원형으로 시작해주세요.
 - Event Hander 함수의 경우 (조동사 + 동사원형)으로 시작해주세요. 주어는 유추 가능하다면, 생략 가능합니다.
