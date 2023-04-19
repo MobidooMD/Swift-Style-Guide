@@ -5,18 +5,18 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 ## 목차
 
 1. [Naming Convention](#NamingConvention)
-    1. [변수](#변수)
-    2. [함수](#함수)
-    3. [열거형](#열거형)
-    4. [구조체와 클래스](#구조체와-클래스)
-    5. [프로토콜](#프로토콜)
-    6. [델리게이트](#델리게이트)
+    1. [variable(변수)](#변수)
+    2. [function(함수)](#함수)
+    3. [Enum(열거형)](#열거형)
+    4. [Struct & Class](#구조체와-클래스)
+    5. [Protocol](#Protocol)
+    6. [Delegate](#Delegate)
 2. [주석](#주석)
 3. [띄어쓰기](#띄어쓰기)
 4. 코드 구성
    1. 미사용 코드
-5. 접근제어자
-6. 클래스와 스트럭트
+5. Access Control
+6. Class & Struct 
 7. 함수호출
 8. [클로져](#클로져)
     1. [후행 클로저 축약](#후행-클로저-축약)
@@ -29,7 +29,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 
 
 ## NamingConvention
-### 변수(Variable)
+### 변수(var, let)
 - 변수 이름은 `lowerCamelCase`를 사용해주세요.
 - 배열과 같이 복수의 의미를 담고있는 변수라면 끝에 **s**를 붙여서 사용해주세요.
 - Bool 타입 변수 작명은 [이곳](https://soojin.ro/blog/naming-boolean-variables)에서 설명하는 대로 따라주세요.
@@ -38,21 +38,21 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 
   - **Good ✅**
     ```swift
-    var categories: [String]
+    let categories: [String]
     var person: Person
     var isShowing: Bool
     ```
   - **Bad ❌**
     ```swift
-    var category: [String]
+    let category: [String]
     var show: Bool
     ```
   </details>
   
-### 함수
+### 함수(func)
 - 함수 이름에는 `lowerCamelCase`를 사용해주세요.
 - 함수는 일반적으로 동사원형으로 시작해주세요.
-- Event-Handling 함수의 경우 (조동사 + 동사원형)으로 시작해주세요. 주어는 유추 가능하다면, 생략 가능합니다.
+- Event Hander 함수의 경우 (조동사 + 동사원형)으로 시작해주세요. 주어는 유추 가능하다면, 생략 가능합니다.
     - will은 특정 행위가 일어나기 직전을 의미합니다.
     - did는 특정 행위가 일어난 직후를 의미합니다.
     <details>
@@ -187,7 +187,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
       ```
     </details>
 
-### 프로토콜
+### Protocol
 - 구조를 나타내는 프로토콜은 명사로 작성해야합니다.
 - 무언가를 할 수 있음(능력)을 설명하는 프로토콜은 형용사로 작성해야합니다.
   <details>
@@ -221,7 +221,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
       ```
     </details>
 
-### 델리게이트
+### Delegate
 - protocol을 이용해 delegate 패턴을 구현합니다.
 - 함수의 첫번째 인자는 생략가능한 델리게이트의 소스 객체를 사용합니다.
    - **Good ✅**
@@ -258,14 +258,26 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
         ```
 
 ## 주석
-> 주석은 협업에 있어 가독성을 높이고 다른 사람의 코드를 이해하는 중요한 도구입니다. 
-- 설명은 최대한 간결하고 핵심 요약에 집중해서 작성해주세요.
-- 함수와 메소드는 기본적으로 무엇을 하는지 무엇을 반환하는지 설명해주시고,  
-널효과나 void 반환은 생략합니다.
-- 작성한 주석은 퀵헬프 메뉴에서 언제든지 조회가 가능합니다.
+- "가장 좋은 코드는 주석이 필요 없는 코드이다" 라는 생각으로 코드를 작성해주세요. 그러나 반드시 주석이 필요할 경우 설명은 최대한 간결하고 핵심 요약에 집중해서 작성해주세요.
+- 함수와 메소드는 기본적으로 무엇을 하는지 무엇을 반환하는지 문서화 주석(Documentation Comment) >[command[⌘] + option[⌥] + [/] 를 통해서 작성해주세요. 작성한 문서화 주석은 퀵헬프 메뉴에서 확인할 수 있습니다.
+- Pragma Mark 를 사용하여 섹션을 꼭 구분해주세요.
+    <details>
+    <summary>Pragma Mark</summary>
+    ```
+    // MARK: - Nested Types
+
+    // MARK: - Views
+
+    // MARK: - Properties
+
+    // MARK: - Life Cycle
+
+    // MARK: - Methods
+    ```
+    </details>
+
   <details>
   <summary>예제코드</summary>
-
   - **Good ✅**
     ```swift
     /// 사용자 데이터를 추가합니다.
