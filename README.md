@@ -54,7 +54,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
 ### Function or Method
 - 함수 이름에는 `lowerCamelCase`를 사용해주세요.
 - 함수는 일반적으로 동사원형으로 시작해주세요.
-- Event Hander 함수의 경우 (조동사 + 동사원형)으로 시작해주세요. 주어는 유추 가능하다면, 생략 가능합니다.
+- Event Handling 함수의 경우 (조동사 + 동사원형)으로 시작해주세요. 주어는 유추 가능하다면, 생략 가능합니다.
     - will은 특정 행위가 일어나기 직전을 의미합니다.
     - did는 특정 행위가 일어난 직후를 의미합니다.
     <details>
@@ -553,7 +553,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
   </details>
 
 ## 파일관리
-- 파일 내에서 모듈 `import`를 알파벳순으로 지정하고 중복된 것들을 제거해주세요.
+- 파일 내에서 `import`한 모듈들을 3rd party와 애플 Standard Library인지 구분하고 중복된 것들을 제거해주세요. **UIKit은 Foundation을 포함하고 있으니 중복사용은 피해주세요.**
   <details>
       <summary>예제코드</summary>
       
@@ -567,6 +567,7 @@ Mobidoo iOS팀의 Swift 사용 가이드라인 입니다. 추후 구성원들의
       - **Bad ❌**
         ```swift
         import Foundation
+        import UIKit
 
         import SnapKit
         import Alamofire
